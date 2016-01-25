@@ -1,0 +1,30 @@
+//
+// Variables
+//
+
+// Colores
+$col_red: #cf4029;
+$col_pink: #e18678;
+$col_pink_75: #f3cfc9;
+
+$col_grey_header: #efefef;
+$col_grey_footer: #595959; // Text also
+$col_grey_titles: #808080;
+$col_grey_text_footer: #acacac;
+$col_grey_hr: #bfbfbf;
+
+//
+// Bourbon Grid
+//
+$fg-column: 81px;    // Column Width
+$fg-gutter: 16px;    // Gutter Width
+$fg-max-columns: 12; // Total Columns For Main Container
+$fg-max-w: $fg-max-columns * $fg-column + ($fg-max-columns - 1) * $fg-gutter;
+$fg-min-w: 960px;
+
+//
+// Define your breakpoints
+//
+$small-desktop: 1199px; // Not used
+$tablet: 1023px;
+$mobile: 766px;

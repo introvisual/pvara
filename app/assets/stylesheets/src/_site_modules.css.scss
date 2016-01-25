@@ -1,0 +1,584 @@
+//
+// Main nav menu
+//
+
+#menu {
+  width: 100%;
+  float:left;
+  text-align:left;
+
+  ul,
+  ol {
+    list-style:none;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+  }
+
+  li {
+    float:left;
+    padding:0;
+    margin:0 16px 0 0;
+
+    font-family: $f_title_l;
+    font-size:16px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    list-style-type:none;
+
+    a,
+    a:link,
+    a:visited,
+    a:active {
+      display:block;
+      height: 76px;
+      color: $col_grey_footer;
+      text-decoration: none;
+      padding: 21px 0 0 0;
+    }
+
+    a:hover {
+      color: $col_red;
+      background: image-url('line-red.png') center 63px repeat-x;
+    }
+  }
+
+  // Hiding
+  > ul {
+    > li {
+      position: relative;
+      > ul {
+        position: absolute;
+        margin-top: 8px;
+        width: 400px;
+        display: none;
+        background-color: $col_red;
+        padding: 18px 0;
+        z-index: 9;
+
+        &:after {
+          left: 0;
+          top: -16px;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(207, 64, 41, 0);
+          border-left-color: #cf4029;
+          border-width: 20px;
+        }
+
+        > li {
+          width: 100%;
+          > a,
+          > a:link,
+          > a:visited,
+          > a:active {
+            height: auto;
+            padding: 6px 0 6px 20px;
+            color: $col_pink_75;
+            &.current,
+            &:hover {
+              // font-family: $f_title_b;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.op1 #menu a.op1,
+body.op2 #menu a.op2,
+body.op3 #menu a.op3,
+body.op4 #menu a.op4,
+body.op5 #menu a.op5,
+body.op6 #menu a.op6,
+body.op7 #menu a.op7 {
+  font-family: $f_title_b;
+  color: $col_red;
+  background: image-url('line-red.png') center 63px repeat-x;
+}
+
+
+//
+// Submenu interior de tratamientos
+//
+
+#submenu {
+  > ul {
+    width: 100%;
+    padding: 16px 16px 2px 20px;
+    margin: 0;
+    display: block !important;
+    background-color: $col_red;
+    overflow: hidden;
+    &:after {
+      display: none;
+    }
+    li {
+      float: left;
+      margin: 0 24px 6px 0;
+      padding: 0;
+
+      font-family: $f_title_l;
+      font-size:16px;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      list-style-type:none;
+      border-bottom: 7px solid transparent;
+      a {
+        // border-bottom: 1px solid $col_pink;
+        padding: 6px 0 6px 0;
+
+        text-decoration: none;
+        color: $col_pink_75;
+        &:hover {
+          color: #fff;
+          border-bottom: 1px solid #fff;
+        }
+      }
+      &.current {
+        font-family: $f_title_b;
+        color: #fff;
+        a {
+          border-bottom: 4px solid #fff;
+          color: #fff;
+        }
+      }
+      &:first-child {
+        a {
+          border-left: 0;
+        }
+      }
+    }
+  }
+}
+
+// Versión de submenú en un select
+.u2s-wrapper {
+  width: 100%;
+  position: relative;
+  padding: 16px 0 16px 10px;
+  margin: 0;
+  display: block !important;
+  background: #cf4029 image-url('ico-arrow-down.png') right center no-repeat;
+  overflow: hidden;
+
+  span.u2s-current {
+    font-family: $f_title_b;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-right: 32px;
+  }
+
+  select {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 56px;
+    opacity: 0;
+    z-index: 3;
+  }
+
+}
+
+// Hide submenu si se el body tiene la clase
+body.op1.hide-submenu #menu > ul > li.op1 > a,
+body.op2.hide-submenu #menu > ul > li.op2 > a,
+body.op3.hide-submenu #menu > ul > li.op3 > a,
+body.op4.hide-submenu #menu > ul > li.op4 > a,
+body.op5.hide-submenu #menu > ul > li.op5 > a,
+body.op6.hide-submenu #menu > ul > li.op6 > a,
+body.op7.hide-submenu #menu > ul > li.op7 > a {
+  background: image-url('red-angle.png') center bottom no-repeat;
+}
+body.op1.hide-submenu #menu > ul > li.op1 > ul,
+body.op2.hide-submenu #menu > ul > li.op2 > ul,
+body.op3.hide-submenu #menu > ul > li.op3 > ul,
+body.op4.hide-submenu #menu > ul > li.op4 > ul,
+body.op5.hide-submenu #menu > ul > li.op5 > ul,
+body.op6.hide-submenu #menu > ul > li.op6 > ul,
+body.op7.hide-submenu #menu > ul > li.op7 > ul {
+  display: none !important;
+}
+
+//
+// Arrow go to to of page
+//
+a.a_arriba_floater {
+  display:block;
+  width:50px;
+  height:50px;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  /* background:url(../img/f_arriba.png) no-repeat 0 0; */
+  /* background:url(../img/f_arriba.png) no-repeat 0 0; */
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABkCAMAAADzNpNpAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURQAAAAAAAAAAAAAAAAAAAE8O540AAAAEdFJOUwC7XykFCa6cAAAA4klEQVR42u3VMQ7DMAxDUZHU/c/cKRFghYGVtf6j4Re7aKvEcyJJKTYj8g7UYH+pDTBAKrCJmC89GuRr8MIbWeFNE0PD3IollDk12CWw1/LRHuKzh/j4cggA/2mehXuW3L1gz2etN2EMDImrZ2LuGzC/iyJNpDEKOZHGMOREmUaMaMYS3qIM1x1GWKMIrIT5uhKNLKItoT0UyDUgOxn/YWakvoTZwNCEcDwu8GEofR99oV2j8VDmePTz6yup4oYYGo5e+yV61kDhEjzwiIsCGJVXwLVdsZ8Up9PpdDqdTqc/7gf2xRrjz/MxrAAAAABJRU5ErkJggg==) 0 0 no-repeat;
+  overflow: hidden;
+
+  text-indent: -9999px;
+
+  /* opacity */
+  opacity:0.5;
+  -ms-filter:"alpha(opacity=50)";
+  -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader()";
+  -khtml-opacity:0.5;
+  -moz-opacity:0.5;
+
+  /* transition */
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a.a_arriba_floater.invisible {
+  /* opacity */
+  opacity:0;
+  -ms-filter:"alpha(opacity=0)";
+  -khtml-opacity:0;
+  -moz-opacity:0;
+}
+
+a.a_arriba_floater:hover {
+  opacity:1;
+  -ms-filter:"alpha(opacity=100)";
+  -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader()";
+  -khtml-opacity:1;
+  -moz-opacity:1;
+}
+
+//
+// Page navigation
+//
+$pagenav_current_color: red;
+$pagenav_base_color: #999; // gris
+$pagenav_text_color: #fff; // gris
+
+.pagenav {
+  width:100%;
+  height: 80px;
+  float:right;
+  clear:both;
+
+  text-align:center;
+
+  p {
+    width: 100%;
+    display:inline-block;
+    text-align:center;
+    padding:8px 20px;
+
+    font-size: 0;
+    line-height: 32px; /* Same as height */
+
+    > a,
+    > span {
+      min-width: 24px; /* 32 */
+      height: 32px;
+      display: inline-block;
+      overflow: hidden;
+      padding: 0 4px;
+      margin: 0 2px;
+
+      font-size: 16px;
+      text-decoration: none;
+      background: $pagenav_base_color;
+      color: $pagenav_text_color;
+
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
+
+    > a {
+      &:hover {
+        background: $pagenav_current_color;
+      }
+    }
+
+    > span {
+      &.current {
+        font-weight: 700 !important;
+        background: $pagenav_current_color;
+      }
+      &.pagecount {
+        padding: 0 8px;
+        background: $pagenav_current_color;
+      }
+    }
+  }
+}
+
+/*
+<div class="pagenav">
+  <p>
+    <span class="pagecount">Página 1 de 30</span>
+    <span class="current">1</span>
+    <a href="?pa=2" class="page">2</a>
+    <a href="?pa=3" class="page">3</a>
+    <a href="?pa=4" class="page">4</a>
+    <a href="?pa=5" class="page">5</a>
+    <a href="?pa=6" class="page">6</a>
+    <a href="?pa=7" class="page">7</a>
+    <a href="?pa=8" class="page">8</a>
+    <a href="?pa=9" class="page">9</a>
+    <a href="?pa=10" class="page">10</a>
+    <a href="?pa=11" class="page">11</a>
+    <a href="?pa=12" class="page">12</a>
+    <a href="?pa=13" class="page">13</a>
+    <span class="elipsis">...</span>
+    <a href="?pa=30" class="page">30</a>
+    <a href="?pa=2" class="next">»</a>
+  </p>
+</div>
+*/
+
+//
+// Flexlider
+//
+.flexslider {
+  width: 450px;
+  height: 300px;
+}
+
+//
+// LayerSlider
+//
+.slider-home {
+  padding: 0 0 32px 0;
+  > .wrapper-no-pad {
+    position: relative;
+  }
+}
+
+
+.slogan-over-slider {
+  position: absolute;
+  right: 18px;
+  top: 44px;
+  padding: 0 16px 0 0;
+  border-right: 8px solid $col_red;
+  z-index: 9;
+  p {
+    font-family: $f_title_l;
+    text-align: right;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $col_red;
+    > b,
+    > strong {
+      font-family: $f_title_b;
+    }
+  }
+}
+
+.slogan-over-slider-footer{
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
+  padding: 0 16px 0 0;
+  border-right: 8px solid $col_red;
+  z-index: 9;
+  p {
+    font-family: $f_title_l;
+    text-align: right;
+    font-size: 18px;
+    line-height: 24px;
+    color: $col_red;
+    > b,
+    > strong {
+      font-family: $f_title_b;
+    }
+  }
+}
+
+#layerslider {
+  width: 1148px;
+  height: 380px;
+  overflow: hidden;
+}
+
+//
+// Bottom line
+//
+.bottom-line {
+  border-bottom: 8px solid $col_grey_titles;
+}
+
+.thin-bottom-line {
+  border-bottom: 1px solid $col_grey_titles;
+}
+//
+// Responsive image
+//
+.w100 {
+  width: 100%;
+  display: block;
+}
+
+//
+// Pics
+//
+.pics-1 {
+  overflow: hidden;
+  padding: 0 32px 8px 32px;
+  background-color: $col_grey_header;
+  > img {
+    width: 100%;
+    display: block;
+    float: left;
+  }
+}
+
+.pics-3 {
+  overflow: hidden;
+  padding-bottom: 8px;
+  background-color: $col_grey_header;
+  > img {
+    width: 33.33%;
+    display: block;
+    float: left;
+  }
+}
+
+//
+// grey-box
+//
+.grey-box {
+  padding: 28px 28px 28px 32px;
+  background-color: $col_grey_header;
+
+  > p {
+    margin-bottom: 24px;
+  }
+
+}
+
+.header-with-icon {
+  padding: 24px 0 0 78px;
+  overflow: hidden;
+  color: $col_red;
+  background: #fff image-url('ico-default.png') -10px -4px no-repeat;
+  border-bottom: 6px solid $col_red;
+}
+
+.periodoncia {
+  .header-with-icon {
+    background-image: image-url('ico-08.png');
+  }
+}
+
+.rehabilitacion {
+  .header-with-icon {
+    background-image: image-url('ico-01.png');
+  }
+}
+
+.odontologia_conservadora {
+  .header-with-icon {
+    background-image: image-url('ico-05.png');
+  }
+}
+
+.odontologia_estetica {
+  .header-with-icon {
+    background-image: image-url('ico-10.png');
+  }
+}
+
+.odontologia_preventiva {
+  .header-with-icon {
+    background-image: image-url('ico-14.png');
+  }
+}
+
+.plasma_rico_en_factores_de_crecimiento {
+  .header-with-icon {
+    background-image: image-url('ico-00.png');
+  }
+}
+
+.tecnologia {
+  .header-with-icon {
+    background-image: image-url('ico-11.png');
+  }
+}
+
+.aside {
+  p {
+    padding: 24px 0 28px 0;
+    @extend .thin-bottom-line;
+    b {
+      color: $col_red;
+    }
+  }
+}
+
+//
+//
+//
+
+ul.thin-line {
+  margin: 24px 0 24px;
+  padding-left: 0;
+  &.red {
+    li {
+      color: $col_red;
+    }
+  }
+  li {
+    padding: 12px 0;
+    line-height: 120%;
+    border-top: 1px solid $col_grey_hr;
+  }
+}
+
+ul.bullets {
+  margin: 24px 0 24px;
+  padding-left: 0 0 0 24px;
+  &.red {
+    li {
+      color: $col_red;
+      font-weight: 700;
+    }
+  }
+  li {
+    list-style: disc outside;
+    line-height: 120%;
+    margin-bottom: 8px;
+  }
+}
+
+//
+// Galeria
+//
+
+.galeria {
+  $margin: 2.5%;
+  > a {
+    width: (100%-($margin*3))/4;
+    float: left;
+    margin: 0 $margin $margin 0;
+    border-bottom: 7px solid $col_red;
+
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+      border-bottom-color: #000;
+    }
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    > img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

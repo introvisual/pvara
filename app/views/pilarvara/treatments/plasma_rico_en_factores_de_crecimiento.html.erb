@@ -1,0 +1,64 @@
+<% content_for :title do %>
+  <title>Clínica dental Pilar Vara, técnica PRFG, Oviedo, Asturias</title>
+  <meta name="description" content="En la clínica médico dental Pilar Vara, en Oviedo, utilizamos las técnicas más avanzadas, como el Plasma Rico en Factores de Crecimiento (PRFG)." />
+  <meta name="keywords" content="odontología, clínica odontológica, implantes, implantes dentales, implantes dentarios, dentista, implantología, medicina, prevención, odontología preventiva, rehabilitación, plasma, prgf, odontología estética, odontología conservadora, financiación" />
+<% end %>
+
+
+<%= render layout:"/pilarvara/partials/treatment_layout" do %>
+  <div class="header-with-icon">
+    <h1 class="title-L">
+      Utilizamos la técnica de <br>
+      <b>Plasma Rico en Factores de Crecimiento</b>
+    </h1>
+  </div>
+
+  <div class="row cols-66-33 pt32">
+
+
+    <div class="col">
+      <div class="grey-box">
+        <p>
+            La utilización del Plasma Rico en Factores de Crecimiento (PRFG, PLASMA RICH
+             IN GROWTH FACTORS) se trata de una técnica de regeneración celular que se
+             utiliza para <strong>acelerar la curación de las lesiones</strong> musculares, tendinosas,
+             articulares, dérmicas, mucosas...
+        </p>
+      </div>
+
+      <div class="pics-1">
+        <%= image_tag asset_path("fot/prgf.jpg"), :alt => "" %>
+      </div>
+
+      <div class="grey-box">
+        <p>
+            El plasma rico lo obtenemos de la <strong>propia sangre del paciente</strong>. Los factores
+            de crecimiento son unas proteínas con un papel clave dentro del proceso de
+            reparación y regeneración de tejidos.
+        </p>
+
+        <p>
+            Es una técnica revolucionaria en el sector de la cirugía oral y de implantes.
+            Promueve la regeneración ósea y de los tejidos blandos. Mejora
+            significativamente el pronóstico de las intervenciones y reduce el tiempo
+            de recuperación de los tejidos.
+        </p>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="aside">
+        <a href="<%= asset_path('fot/gallery/CPV_2014_10.jpg') %>" class="fancybox" title="En la Clínica Médico-Dental Pilar Vara utilizamos la técnica de Plasma Rico
+        en Factores de Crecimiento para reducir los tiempos de recuperación de nuestros pacientes">
+          <%= image_tag(asset_path("fot/gallery/thumbnails/CPV 2014_10.jpg"), class: "w100 bottom-line", alt: "Utilizamos la técnica de PRGF") %>
+        </a>
+        <p><b class="red">Plasma Rico en Factores de Crecimiento</b><br>
+          En la Clínica Médico-Dental Pilar Vara utilizamos la técnica de Plasma Rico
+          en Factores de Crecimiento para reducir los tiempos de recuperación de nuestros pacientes.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+<% end %>

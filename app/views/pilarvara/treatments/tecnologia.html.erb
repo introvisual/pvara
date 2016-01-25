@@ -1,0 +1,64 @@
+<% content_for :title do %>
+  <title>Clínica dental Pilar Vara, la tecnología dental en Oviedo</title>
+  <meta name="description" content="En la clínica médico dental Pilar Vara, en Oviedo, utilizamos la tecnología más avanzada, como la ortopantomografía y la radiovisiografía." />
+  <meta name="keywords" content="odontología, clínica odontológica, implantes, implantes dentales, implantes dentarios, dentista, implantología, medicina, prevención, odontología preventiva, rehabilitación, plasma, prgf, odontología estética, odontología conservadora, financiación" />
+<% end %>
+
+
+<%= render layout:"/pilarvara/partials/treatment_layout" do %>
+  <div class="header-with-icon">
+    <h1 class="title-L">
+      Utilizamos la <br>
+      <b>Tecnología más moderna</b>
+    </h1>
+  </div>
+
+  <div class="row cols-66-33 pt32">
+
+
+    <div class="col">
+
+      <div class="grey-box">
+        <p>
+          Disponemos de los últimos avances tecnológicos, como son la <strong>ortopantomografía
+          y la radiovisiografía</strong> digitales, centrifugadora de plasma... un sinfín
+          de medios a tu alcance para que tu tratamiento sea de la máxima calidad, es decir,
+          la excelencia en Odontología.
+        </p>
+
+      </div>
+
+      <div class="pics-1">
+        <%= image_tag asset_path("fot/gallery/CPV_2014_10.jpg"), :alt => "" %>
+      </div>
+
+      <div class="grey-box">
+        <h2 class="_h3 red">Radiología digital</h2>
+
+        <p>
+          Se trata de una técnica complementaria que hoy en día resulta imprescindible para realizar
+          un diagnóstico correcto y planificar el tratamiento adecuado y personalizado para cada caso.
+        </p>
+
+        <p>
+          La Clínica Médico-Dental Pilar Vara, cuenta con un sistema de radiografía intraoral
+          (radiovisiografía) y otra extraoral con la que conseguimos imágenes panorámicas
+          (ortopantomografía).
+        </p>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="aside">
+        <a href="<%= asset_path('fot/gallery/CPV_2014_6.jpg') %>" class="fancybox" title="Nos valemos de la última tecnología para ofrecerte un diagnóstico y tratamiento más preciso.">
+          <%= image_tag(asset_path("fot/gallery/thumbnails/CPV 2014_6.jpg"), class: "w100 bottom-line", alt: "Nos valemos de la última tecnología para ofrecerte un diagnóstico y tratamiento más preciso.") %>
+        </a>
+        <p><b class="red">Tecnología a tu servicio</b><br>
+          Nos valemos de la última tecnología para ofrecerte un diagnóstico y tratamiento más preciso.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+<% end %>

@@ -1,0 +1,19 @@
+
+<%= render partial:"/pilarvara/partials/headmeta" %>
+
+<% body_class ||= '' %>
+
+<body class="<%= body_class %>" id="www_pilarvara_es">
+
+<div id="responsive-nav"><%= render partial: "pilarvara/partials/menu", :locals => { :responsive_menu => true } %></div>
+
+<div id="contenedor">
+
+  <%= yield %>
+
+  <div class="push"><!--Sticky Footer Push--></div>
+
+</div><!--contenedor-->
+<%= render partial:"/pilarvara/partials/footer" %>
+</body>
+</html>

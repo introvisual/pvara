@@ -1,0 +1,141 @@
+//
+// Mobile
+//
+@include media($mobile) {
+
+  body:after {
+    background-color: cyan;
+    content: 'mobile';
+    display:none;
+  }
+
+  .pt32 {
+    padding-top: 16px;
+  }
+
+  .pics-1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cols-33-66 {
+    > .col {
+      width: 100%;
+      float: left;
+      &:first-child {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .cols-66-33 {
+    > .col {
+      width: 100%;
+      float: left;
+      &:first-child {
+        width: 100%;
+      }
+    }
+  }
+
+  .grey-box {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  section#main {
+    padding-bottom: 16px;
+  }
+
+  header#arriba {
+    .top-most {
+      padding-top: 14px;
+
+      .logo-header {
+        display: none;
+      }
+    }
+  }
+
+  .title-L {
+    font-size: 18px;
+    line-height: 1em;
+  }
+
+  .slider-home {
+    padding-bottom: 0;
+  }
+
+  .slogan-over-slider {
+    top: 8px;
+    p {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+
+  .slogan-over-slider-footer {
+    display: none;
+  }
+
+  footer#sticky {
+    height: auto;
+    padding-bottom: 20px;
+    .footer_contents {
+      height: auto;
+      background-image: none;
+
+      .cita-previa-footer {
+        transform: scale(1,1);
+        float: left;
+        clear: both;
+        padding-top: 16px;
+        padding-bottom: 28px;
+        background-position: 0 12px;
+      }
+
+      address {
+        float: left;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .formbuilder {
+    margin-right: 0;
+    fieldset {
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-left: -8px;
+      margin-right: -8px;
+      input[type=reset],
+      input[type=submit] {
+        width: 100%;
+        margin: 0 0 8px 0;
+      }
+      div.captcha {
+        padding-bottom: 130px;
+        position: relative;
+      }
+    }
+  }
+
+  #recaptcha_widget_div {
+    position: absolute;
+    left: -4px;
+    bottom: -12px;
+    transform-origin: 0 0;
+    transform: scale(0.80, 0.80);
+    overflow: visible;
+    // float: left;
+  }
+
+  .galeria > a {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 16px;
+  }
+
+}

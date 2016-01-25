@@ -1,0 +1,148 @@
+// Sticky footer height
+$footer_height: 240px;
+
+html {
+  background:#fff;
+}
+
+body {
+
+}
+
+//
+// Header
+//
+header#arriba {
+  min-height: 218px;
+  text-align: center;
+
+  .top-most {
+    background-color: #fff;
+    padding: 34px 0 0 0;
+    min-height: 152px;
+
+    .logo-header {
+      display: block;
+      width: 469px;
+      height: 69px;
+      float: left;
+      overflow: hidden;
+      > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .cita-previa-header {
+      width: 275px;
+      float: right;
+      margin-top: -12px;
+      > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  div#h-interior {
+    min-height:68px;
+    clear:both;
+    margin:auto;
+    text-align:left;
+  }
+}
+
+
+//
+// Main blocks
+//
+#contenedor {
+  width:100%;
+
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+
+  /* =STICKY. Set footer height. */
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin:0 auto (-$footer_height) auto;
+  /* =STICKY */
+}
+
+//
+// Main content
+//
+section#main {
+  max-width: $fg-max-w;
+  margin:auto;
+  padding:0 0 48px 0;
+  clear:both;
+  overflow:hidden;
+
+  // background-color:#0F0;
+
+  text-align:left;
+}
+
+//
+// Sticky footer
+//
+.push {
+  /* =STICKY. Set footer height. */
+  height: $footer_height;
+  /* =STICKY */
+
+}
+
+footer#sticky {
+  /* =STICKY. Set footer height. */
+  height: $footer_height + 8;
+  clear: both;
+  background-color: $col_grey_footer;
+  border-top: 8px solid #f2f2f2;
+}
+
+.footer_contents {
+  height: $footer_height;
+  clear: both;
+  margin: auto;
+  text-align: left;
+  position: relative; /* Added so the links work fine in old IEs */
+  background: image-url('pilar-vara-logo-bottom.png') 0 28px no-repeat;
+
+  .cita-previa-footer {
+    float: right;
+    width: 290px;
+    min-height: 110px;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 84px;
+    background: image-url('phone-footer.png') 0 0 no-repeat;
+
+    .phone {
+      color: white;
+      text-decoration:none;
+      font-family: "tonyblair_stdlight", Trebuchet, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 0.5;
+      strong, b {
+        font-family: "tonyblair_stdbold", Trebuchet, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        margin-top: -8px;
+      }
+    }
+  }
+}
+
+footer address {
+  padding: 100px 0 0 0;
+  color: $col_grey_text_footer;
+  > b,
+  > strong {
+    color: #fff;
+  }
+}
+

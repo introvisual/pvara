@@ -1,0 +1,61 @@
+#cookies-warning {
+  width: 100%;
+  padding: 16px 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  border-top: 1px solid #fff;
+  background: #C42A19;
+}
+#cookies-warning p {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px 0 50px;
+  max-width: 900px;
+  text-align: left;
+  color: #fff;
+}
+#cookies-warning p b {
+  font-weight: 700;
+}
+#cookies-warning p a {
+  color: #fff;
+  text-decoration: underline;
+}
+#cookies-warning p a:hover {
+  color: #fff;
+}
+#cookies-warning svg {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  float: left;
+  margin-right: 8px;
+}
+#cookies-warning svg .bg {
+  fill: #FFFFFF;
+}
+#cookies-warning svg .fg {
+  fill: #C42A19;
+}
+#cookies-warning a#cookies-warning-more-info {
+  /*margin-right: 10px;*/
+  /*background: #dc042b;*/
+  /*padding: 16px;*/
+
+  text-decoration: underline;
+  color: #fff;
+}
+#cookies-warning a#cookies-warning-close {
+  /*margin-right: 10px;*/
+  /*background: #ccc;*/
+  /*padding: 16px;*/
+
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* CAUTION!: This rule must be the last */
+#cookies-warning {
+  display: block !important;
+}

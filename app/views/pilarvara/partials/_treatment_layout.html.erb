@@ -1,0 +1,19 @@
+<%= render partial:"/pilarvara/partials/header" %>
+
+<section id="main">
+  <div id="submenu">
+    <ul id="submenu-to-select">
+      <li class="<%= @view_name == 'implantologia' ? "current" : '' %>"><a href="/tratamientos/implantologia">Implantología</a></li>
+      <li class="<%= @view_name == 'periodoncia' ? "current" : '' %>"><a href="/tratamientos/periodoncia">Periodoncia</a></li>
+      <li class="<%= @view_name == 'rehabilitacion' ? "current" : '' %>"><a href="/tratamientos/rehabilitacion">Rehabilitación</a></li>
+      <li class="<%= @view_name == 'odontologia_conservadora' ? "current" : '' %>"><a href="/tratamientos/odontologia_conservadora">Odontología Conservadora</a></li>
+      <li class="<%= @view_name == 'odontologia_estetica' ? "current" : '' %>"><a href="/tratamientos/odontologia_estetica">Odontología Estética</a></li>
+      <li class="<%= @view_name == 'odontologia_preventiva' ? "current" : '' %>"><a href="/tratamientos/odontologia_preventiva">Odontología Preventiva</a></li>
+      <li class="<%= @view_name == 'plasma_rico_en_factores_de_crecimiento' ? "current" : '' %>"><a href="/tratamientos/plasma_rico_en_factores_de_crecimiento">Plasma P.R.G.F.</a></li>
+      <li class="<%= @view_name == 'tecnologia' ? "current" : '' %>"><a href="/tratamientos/tecnologia">Tecnología</a></li>
+    </ul>
+  </div>
+
+  <%= yield %>
+
+</section>

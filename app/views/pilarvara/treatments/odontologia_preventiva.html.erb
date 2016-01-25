@@ -1,0 +1,56 @@
+<% content_for :title do %>
+  <title>Clínica dental Pilar Vara, Odontología Preventiva en Oviedo</title>
+  <meta name="description" content="En la clínica médico dental Pilar Vara te ayudamos a prevenir en tu salud bucodental. Oviedo, Asturias." />
+  <meta name="keywords" content="odontología, clínica odontológica, implantes, implantes dentales, implantes dentarios, dentista, implantología, medicina, prevención, odontología preventiva, rehabilitación, plasma, prgf, odontología estética, odontología conservadora, financiación" />
+<% end %>
+
+<%= render layout:"/pilarvara/partials/treatment_layout" do %>
+  <div class="header-with-icon">
+    <h1 class="title-L">
+      Especialistas en<br>
+      <b>Odontología Preventiva en Oviedo</b>
+    </h1>
+  </div>
+
+  <div class="row cols-66-33 pt32">
+
+
+    <div class="col">
+      <div class="grey-box">
+        <p>La Odontología preventiva es fundamental para el <strong>control de la salud bucodental</strong>.
+          Con la prevención podemos detectar a tiempo problemas que con el tiempo se agravarían.
+          Una caries pequeña es fácil de tratar y frenando su evolución podemos evitar la
+          realización de una endodoncia o extracción, tratamientos complejos que nos causan
+          mayores trastornos y nos encarecen el tratamiento.</p>
+      </div>
+
+      <div class="pics-1">
+        <%= image_tag asset_path("fot/revision.jpg"), :alt => "" %>
+      </div>
+
+      <div class="grey-box">
+        <p>Con la prevención mantenemos una buena higiene oral que nos ayudará a prevenir
+          caries y patologías en la encía. Aademás con las revisiones controlaremos el
+          ajuste de prótesis que nos pudieran ocasionar lesiones y detectamos hábitos
+          que pueden afectar a una correcta función de los dientes.</p>
+
+        <p>La prevención es aun más importante en los niños en los que podemos vigilar
+          el buen desarrollo de todo el área orofacial lo que nos llevará con el tiempo
+          a una correcta función y estética pudiendo evitar tratamientos posteriores como
+          ortodoncia o cirugía.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="aside">
+        <a href="<%= asset_path("fot/sonrisa.jpg") %>" class="fancybox" title="Acudir a revisiones periódicas reduce al máximo los problemas provocados por las caries">
+          <%= image_tag(asset_path("fot/sonrisa.jpg"), class: "w100 bottom-line", alt: "Revisión dental") %>
+        </a>
+        <p><b class="red">Prevenir es el primer paso</b><br>
+          Acudir a revisiones periódicas reduce al máximo los problemas provocados por las caries.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+<% end %>

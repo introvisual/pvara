@@ -1,0 +1,9 @@
+//
+// Desktop
+//
+@media all and (min-width:1px) {
+  body:after {
+    content: 'desktop';
+    display:none;
+  }
+}

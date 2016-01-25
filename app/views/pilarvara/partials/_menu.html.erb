@@ -1,0 +1,23 @@
+<% responsive_menu = false if local_assigns[:responsive_menu].nil? %>
+<nav <% unless responsive_menu %>id="menu"<% end %>>
+  <ul>
+    <li class="hidden"><a href="#main" accesskey="s" >Ir a los contenidos</a></li>
+    <li class="op1"><a href="/" class="op1" accesskey="1">Inicio</a></li>
+    <li class="op2"><a href="/equipo-humano" class="op2" accesskey="2">Equipo humano</a></li>
+    <li class="op3"><a href="/tratamientos/implantologia" class="op3" accesskey="3">Tratamientos</a>
+      <ul>
+        <li class="op31" class="op31"><a href="/tratamientos/implantologia">Implantología</a></li>
+        <li class="op32" class="op32"><a href="/tratamientos/periodoncia">Periodoncia</a></li>
+        <li class="op33" class="op33"><a href="/tratamientos/rehabilitacion">Rehabilitación</a></li>
+        <li class="op34" class="op34"><a href="/tratamientos/odontologia_conservadora">Odontología Conservadora</a></li>
+        <li class="op35" class="op35"><a href="/tratamientos/odontologia_estetica">Odontología Estética</a></li>
+        <li class="op36" class="op36"><a href="/tratamientos/odontologia_preventiva">Odontología Preventiva</a></li>
+        <li class="op37" class="op37"><a href="/tratamientos/plasma_rico_en_factores_de_crecimiento">Plasma P.R.G.F.</a></li>
+        <li class="op38" class="op38"><a href="/tratamientos/tecnologia">Tecnología</a></li>
+      </ul>
+    </li>
+    <li class="op4"><a href="/instalaciones" class="op4" accesskey="4">Instalaciones</a></li>
+    <li class="op5"><a href="/financiacion" class="op5" accesskey="5">Financiación</a></li>
+    <li class="op6"><a href="/contacto-localizacion" class="op6" accesskey="6">Contacto</a></li>
+  </ul>
+</nav>

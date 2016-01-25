@@ -1,0 +1,229 @@
+//
+// Variables de tipografía
+//
+
+$f_default_size: 16px;
+$f_default_line_height: 150%;
+$f_default_margin_bottom: 22px; /* fz * lh */
+$f_default_color: #333;
+
+$f_base: 'Open Sans', Trebuchet, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+
+$f_title_l: 'tonyblair_stdlight', Trebuchet, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+$f_title_r: 'tonyblair_stdregular', Trebuchet, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+$f_title_b: 'tonyblair_stdbold', Trebuchet, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+
+// Common font-faces
+// 'Trebuchet MS', Trebuchet, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+// Georgia, 'Times New Roman', Times, serif;
+// 'Courier New', Courier, monospace; */
+
+/* -------------------------------------
+=Initial */
+
+html {
+  color: $col_grey_footer;
+}
+
+/* -------------------------------------
+=Embedded fonts */
+
+@include font-face('tonyblair_stdbold', 'tonyblairstd-bold-webfont', 400, $asset-pipeline: true);
+@include font-face('tonyblair_stdregular', 'tonyblairstd-webfont', 400, $asset-pipeline: true);
+@include font-face('tonyblair_stdlight', 'tonyblairstd-light-webfont', 400, $asset-pipeline: true);
+
+/* @font-face {
+  font-family: 'tonyblair_stdbold';
+  src: url('/fonts/tonyblairstd-bold-webfont.eot');
+  src: url('/fonts/tonyblairstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/tonyblairstd-bold-webfont.woff') format('woff'),
+       url('/fonts/tonyblairstd-bold-webfont.ttf') format('truetype'),
+       url('/fonts/tonyblairstd-bold-webfont.svg#tonyblair_stdbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tonyblair_stdregular';
+  src: url('/fonts/tonyblairstd-webfont.eot');
+  src: url('/fonts/tonyblairstd-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/tonyblairstd-webfont.woff') format('woff'),
+       url('/fonts/tonyblairstd-webfont.ttf') format('truetype'),
+       url('/fonts/tonyblairstd-webfont.svg#tonyblair_stdregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tonyblair_stdlight';
+  src: url('/fonts/tonyblairstd-light-webfont.eot');
+  src: url('/fonts/tonyblairstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/tonyblairstd-light-webfont.woff') format('woff'),
+       url('/fonts/tonyblairstd-light-webfont.ttf') format('truetype'),
+       url('/fonts/tonyblairstd-light-webfont.svg#tonyblair_stdlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+//
+// Default text / type styles */
+//
+
+// General font sizes
+body,
+ol, ul, li,
+address,
+blockquote, pre, code, kbd, samp, q,
+sub, sup, small,
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: $f_base;
+  font-size:   $f_default_size;
+  line-height: $f_default_line_height;
+  text-align: left;
+  font-weight: 400;
+  color: $f_default_color;
+}
+
+dfn,
+em,
+i {
+  font-style: italic;
+  font-size: inherit;
+}
+
+strong,
+b {
+  font-weight: 700;
+  font-size: inherit;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 14px;
+  line-height: 130%;
+  text-align: left;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+address {
+  font-style:normal !important;
+}
+
+footer address {
+  font-size: $f_default_size;
+  line-height: $f_default_line_height;
+}
+
+//
+// Forms feneral
+//
+button, input, select, textarea, fieldset, legend,
+label, select {
+  font-size: $f_default_size;
+  line-height: $f_default_line_height;
+  font-weight: 400;
+  text-align: left;
+}
+
+//
+// Listas
+//
+
+// ul li { list-style: disc outside; }
+// ol li { list-style: decimal outside; }
+
+ul, ol, li {
+  list-style: none;
+}
+
+li {
+  font-size: 100%;
+  line-height: 160%;
+}
+
+dl, menu, ol, ul {
+  margin: 1em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+menu, ol, ul {
+  padding: 0 0 0 40px;
+}
+
+//
+// Enlaces
+//
+a:focus { outline: thin dotted; }
+a:hover,
+a:active { outline: 0; }
+
+a, a:link,
+a:visited,
+a:hover,
+a:active {
+  font-weight: 700;
+  color: $col_red;
+  outline: 0;
+  text-decoration:underline;
+}
+a:hover {
+  color: #000;
+}
+
+footer address a,
+footer address a:link,
+footer address a:visited,
+footer address a:hover,
+footer address a:active {
+  font-weight: 400;
+  color: $col_grey_text_footer;
+  text-decoration: underline;
+}
+
+footer address a:hover {
+  color: #fff;
+}
+
+// Icono automático en links de download
+/* a[href$=".pdf"] { padding:0 20px 0 0; background:transparent url(/img/pdf.png) no-repeat center right; } */

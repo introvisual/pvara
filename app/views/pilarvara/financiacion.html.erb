@@ -1,0 +1,56 @@
+<% content_for :title do %>
+  <title>Clínica dental Pilar Vara, financiamos tu tratamiento en Oviedo</title>
+  <meta name="description" content="En la clínica médico dental Pilar Vara financiamos tus tratamientos sin intereses hasta 24 meses. Oviedo, Asturias." />
+  <meta name="keywords" content="odontología, clínica odontológica, implantes, implantes dentales, implantes dentarios, dentista, implantología, medicina, periodoncia, rehabilitación, plasma, prgf, odontología estética, odontología conservadora, financiación" />
+<% end %>
+
+<%= render partial:"/pilarvara/partials/header" %>
+
+<section id="main">
+
+  <div class="row cols-66-33 pt32">
+    <div class="col">
+      <h1 class="title-L top-line">
+        Financiación completa de los tratamientos <b class="red">a tu medida</b>
+      </h1>
+      <div class="grey-box">
+
+        <p>
+          En nuestra clínica somos conscientes de que a veces es necesaria una ayuda para hacer
+          frente a un tratamiento odontológico. Por ello, nos ponemos en su lugar y ponemos
+          todo nuestro empeño en encontrar la <strong>financiación</strong> que se adapte a <strong>sus necesidades</strong>.
+        </p>
+
+        <p>
+          En la clínica Médico-Dental Pilar Vara, ofrecemos financiación a <strong>12, 18 y 24</strong> meses
+          sin intereses ni comisión de apertura. Y <strong>financiamos hasta 5 años</strong> con unos intereses
+          razonables*.
+        </p>
+
+        <p>
+          Queremos ayudarte, de esta manera, a que puedas afrontar tu tratamiento de inmediato
+          y sin más preocupación.
+        </p>
+
+        <p>
+          En esta Clínica Médico-Dental, lo más importante <strong>eres tú</strong>.
+        </p>
+
+        <em>*Financiación sujeta a la aprobación de la entidad bancaria.</em>
+
+      </div>
+
+      <div class="pics-1">
+        <%= image_tag asset_path("fot/financiacion-texto.jpg"), :alt => "" %>
+      </div>
+
+    </div>
+    <div class="col">
+      <div class="aside">
+          <%= image_tag(asset_path("fot/financiacion-aside.jpg"), class: "w100 bottom-line", alt: "Imagen 3D de implantes") %>
+        <p>
+        Si deseas consultar tu <b>caso concreto y las condiciones de financiación</b> que te ofrecemos, no dudes en ponerte en <a href="/contacto-localizacion">contacto con nosotros</a>, te informaremos sin ningún tipo de compromiso.</p>
+      </div>
+    </div>
+  </div>
+</section>

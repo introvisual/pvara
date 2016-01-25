@@ -1,0 +1,109 @@
+<% content_for :title do %>
+  <title>Clínica dental Pilar Vara, nuestro equipo humano</title>
+  <meta name="description" content="El equipo de la clínica Pilar Vara, un equipo de profesionales altamente cualificados. Médicos odontólogos y estomatólogos a su servicio." />
+  <meta name="keywords" content="odontólogos, dentistas, estomatólogos, médicos estomatólogos, anestesistas, higienistas dentales" />
+<% end %>
+
+<%= render partial:"/pilarvara/partials/header" %>
+
+<section id="main">
+
+<div class="row cols-33-66 pt32">
+  <div class="col">
+
+    <a href="<%=asset_path("fot/pilar-vara-01.jpg")%>" class="fancybox" title="La Dra. Pilar Vara">
+      <%= image_tag(asset_path("fot/pilar-vara-01.jpg"), class: "w100", alt: "La Dra. Pilar Vara") %>
+    </a>
+    <p class="title-L top-line red">
+      La Dra.<br>
+      <b>Pilar Vara</b>
+    </p>
+
+    <p>
+      Todos los tratamientos son realizados y/o supervisados por la <strong>Dra. Pilar Vara</strong>,
+      directora médica y odontóloga y Doctora en Medicina y Cirugía por la Universidad de Salamanca,
+      y por un equipo de odontólogos, anestesista e higienistas dentales dispuestos a solventar
+      cualquier duda que aparezca antes, durante y después del tratamiento.
+    </p>
+
+    <p>
+      <br>
+      Estamos colegiados en el <strong>ilustre Colegio de Odontó-estomatólogos</strong> de Asturias, lo cual, ya de por sí, es una garantía para el paciente.
+    </p>
+
+  </div>
+  <div class="col">
+    <h1 class="title-L top-line">
+      Más de 20 años de experiencia<br>
+      <b>En la vanguardia de la<br>
+        medicina dental</b>
+    </h1>
+    <div class="grey-box">
+      <h2 class="_h3">Un equipo volcado con el paciente</h2>
+
+      <p>
+        Nuestros pacientes son lo más importante. El trabajo de nuestros
+        profesionales es realizar los tratamientos más adecuados a cada
+        paciente y de mejor calidad.
+      </p>
+
+      <p>
+        Nuestro equipo altamente cualificado, está a tu disposición para conseguir
+        los mejores resultados en salud y estética bucodental.
+      </p>
+
+      <h2 class="_h3 red">
+        Tu sonrisa es nuestro mayor valor.
+      </h2>
+
+      <p>
+        Nuestro cometido es dar calidad en nuestros tratamientos médico-odontológicos,
+        lo que conlleva la garantía de los resultado terapéuticos. Hacer buena Odontología
+        no es sólo colocar el implante, por ejemplo, sino tener en cuenta los pasos previos,
+        la confección de la prótesis que llevará el paciente y el mantenimiento de la prótesis
+        mediante revisiones periódicas a lo largo de la vida
+        del paciente.
+      </p>
+
+      <p>
+        Dedicamos todos nuestros esfuerzos a encontrar la solución a tus necesidades.
+        Te esperamos.
+      </p>
+
+      <h2 class="_h3">Nuestros valores</h2>
+      <p>Nuestro objetivo principal es devolverte la sonrisa. Nos preocupamos por
+         restaurar tu salud bucodental que es lo más importante para nosotros.</p>
+
+      <p>Trabajamos para ofrecerte tratamientos de calidad y adecuados a tu caso
+        personal y tus necesidades. Te escuchamos y buscamos soluciones a tus
+        problemas de salud bucodental.</p>
+
+    </div>
+
+      <div class="pics-1">
+        <%= image_tag asset_path("fot/gallery/CPV_2014_7-edit.jpg"), :alt => "" %>
+      </div>
+
+    <div class="grey-box">
+      <h2 class="_h3 red">
+        Nuestra Odontología
+      </h2>
+      <p>
+        Creemos en la Odontología de una manera integral e individualizada para
+        cada paciente. Cada paciente es único e irrepetible en todos los aspectos por lo que
+        nuestra atención desde el primer momento también lo debe ser.
+      </p>
+
+      <p>
+        Creemos en la importancia de la <strong>PREVENCIÓN</strong> en la Odontología ya que nos
+        importa no sólo restaurar su salud bucodental sino conservarla.
+      </p>
+    </div>
+
+    <div class="pics-1">
+      <%= image_tag asset_path("fot/centrifugadora.jpg"), :alt => "" %>
+    </div>
+  </div>
+</div>
+
+</section>

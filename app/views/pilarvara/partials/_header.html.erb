@@ -1,0 +1,21 @@
+    <header id="arriba" class="row">
+
+    <div class="row top-most">
+      <div class="wrapper">
+        <div id="show-responsive-nav"></div>
+        <a href="/" class="logo-header" title="Volver a la principal">
+          <%= image_tag asset_path("pilar-vara-logo-top.png", :alt => "Lototipo Pilar Vara") %>
+        </a>
+        <a href="tel:+34985272813" class="cita-previa-header" title="Cita previa">
+          <%= image_tag asset_path("telefono-cita-previa.png", :alt => "Teléfono cita previa 985 27 28 13") %>
+        </a>
+      </div>
+    </div>
+
+    <div class="row grey main-menu-container">
+      <div id="h-interior" class="wrapper">
+       <%= render partial: "pilarvara/partials/menu" %>
+      </div>
+    </div>
+
+  </header>

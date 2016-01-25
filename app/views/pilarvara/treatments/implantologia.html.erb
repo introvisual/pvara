@@ -1,0 +1,115 @@
+<% content_for :title do %>
+  <title>Clínica dental Pilar Vara, implantes dentales en Oviedo</title>
+  <meta name="description" content="En la clínica Médico-Dental Pilar Vara, somos especialistas en Implantología Dental. Médicos dentistas especialistas en implantes dentales en Oviedo, Asturias" />
+  <meta name="keywords" content="dentista, odontología, clínica odontológica, implantes, implante dental, implantes dentales, implantes dentarios, implantología, implantología dental, medicina, financiación" />
+<% end %>
+
+<%= render layout:"/pilarvara/partials/treatment_layout" do %>
+
+  <div class="header-with-icon">
+    <h1 class="title-L">
+      Especialistas en<br>
+      <b>implantología dental en oviedo</b>
+    </h1>
+  </div>
+
+  <div class="row cols-66-33 pt32">
+
+
+    <div class="col">
+      <div class="grey-box">
+
+        <p>
+          <em class="red">"Porque te hago
+            saber, Sancho, que la boca sin muelas es como molino sin piedra,
+          y en mucho más se ha de estimar un diente que un diamante..."</em>
+          <strong>Don Miguel de Cervantes Saavedra.</strong>
+        </p>
+
+        <p>
+          Ya nuestro querido Don Quijote de la Mancha sabía de la importancia de un diente.
+          Cuando perdemos un diente se producen una serie de <strong>alteraciones</strong>.
+          Debido a ello, cuando nos vemos ante la pérdida de un diente definitivo, ya sea
+          por traumatismos, enfermedad periodontal, caries o la ausencia de un diente que
+          no nació, es realmente importante su reposición para reestablecer de forma correcta
+          todas sus funciones.
+        </p>
+
+        <p>
+          <strong>Función masticatoria:</strong> Cuando perdemos los dientes, es más dificultosa
+          la masticación ya que se disminuye la superficie con la que procesamos los alimentos.
+          A esto se le suma que el resto de los dientes tienden a cubrir el espacio perdido
+          por lo que se mueven, se inclinan, rotan y se va desestabilizando la mordida.
+        </p>
+
+        <p>
+          <strong>Función fonética:</strong> La presencia de espacios sin diente pueden
+          provocar alteraciones en la vocalización de algunas palabras.
+        </p>
+
+        <p>
+          <strong>Función estética:</strong> La pérdida de dientes sobre todo en el sector
+          anterior puede desembocar en cambios estéticos debidos a la reabsorción ósea que se
+          produce. Estos cambios se pueden observar a nivel intraoral como el nivel encía
+          a diferentes alturas, pérdida de volumen en el reborde y a nivel extraoral perdiendo
+          soporte labial y dimensión vertical, lo que provoca un cambio en el perfil
+          de la cara (cara de persona mayor).
+        </p>
+
+      </div>
+
+      <div class="pics-1">
+        <%= image_tag asset_path("fot/gallery/CPV_2014_2.jpg"), :alt => "Vista interior de la clínica" %>
+      </div>
+
+      <div class="grey-box">
+        <h2 class="_h3 red">Implantes dentales en Oviedo</h2>
+        <p>
+          <strong>Para reponer un diente tenemos diferentes opciones.</strong> Tenemos las prótesis
+          removibles, ya sean parciales o totales. Son aquellas que se quitan y se ponen.
+          Las prótesis fijas sobre dientes conocidas como puentes y las prótesis sobre implantes.
+        </p>
+
+        <p>
+          Hoy en día la rehabilitación mediante prótesis dental más parecida a lo que son nuestros
+          propios dientes es aquella que se realiza sobre implantes dentales. No se anclan a otros dientes
+          mediante retenedores (ganchos) que con el tiempo pueden terminar por dañarlos
+          y no es necesario tallar (rebajar) los dientes de al lado como ocurre con los puentes.
+          En definitiva nos proporcionan comodidad, retención y una estética que no nos ofrecen
+          las prótesis convencionales.
+        </p>
+
+        <p>
+          <strong>¿Qué es un implante?</strong> Cuando hablamos de implantes nos referimos
+          a los anclajes de titanio (tornillo) que irán dentro del hueso y al que fijaremos
+          nuestra prótesis, que son los dientes que vemos en boca.
+        </p>
+
+        <p>
+          <strong>¿Cómo es el proceso?</strong> Primeramente se colocan los implantes en el
+          hueso mediante una intervención quirúrjica. El titanio del que están hechos es un
+          material que tiene la capacidad de osteointegrarse, lo que quiere decir que queda
+          fijo al hueso, este proceso lleva un tiempo dependiendo del estado de la zona en la que
+          lo vamos a colocar (infecciones previas, injertos, elevación del seno, hueso muy blando...).
+          Durante este tiempo el paciente puede llevar prótesis provisional o no llevarla.
+          Se pueden colocar dientes mediante una prótesis provisional de quita y pon o bien
+          una prótesis fija a los implantes el día de la cirugía que se denomina
+          carga inmediata.
+        </p>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="aside">
+        <a href="<%=asset_path("fot/tratamientos-foto-implantes.jpg")%>" class="fancybox" title="Los implantes son la forma más cómoda y estética de reemplazar piezas dentales perdidas">
+          <%= image_tag(asset_path("fot/tratamientos-foto-implantes.jpg"), class: "w100 bottom-line", alt: "Imagen 3D de implantes") %>
+        </a>
+        <p><b class="red">Implantología dental</b><br>
+            Los implantes son la forma más cómoda y estética de reemplazar piezas dentales perdidas.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+<% end %>

@@ -1,0 +1,22 @@
+<% content_for :title do %>
+  <title>Clínica dental Pilar Vara, galería e instalaciones en Oviedo</title>
+  <meta name="description" content="Comprueba nuestras instalaciones en el centro de Oviedo, Asturias." />
+  <meta name="keywords" content="odontología, clínica odontológica, implantes, implantes dentales, implantes dentarios, dentista, implantología, medicina, periodoncia, rehabilitación, plasma, prgf, odontología estética, odontología conservadora, financiación" />
+<% end %>
+
+
+<%= render partial:"/pilarvara/partials/header" %>
+
+<section id="main">
+  <div class="wrapper galeria pt32">
+
+    <% 1.upto(23) do |i| %>
+
+      <%= link_to asset_path("fot/gallery/CPV_2014_#{i}.jpg"), :class=>"fancybox galeria", :rel=>"galeria" do %>
+        <%= image_tag asset_path("fot/gallery/thumbnails/CPV_2014_#{i}.jpg"), :alt => "Pulse para ampliar" %>
+      <% end %>
+
+    <% end %>
+
+  </div>
+</section>

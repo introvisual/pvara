@@ -1,0 +1,20 @@
+//
+// Tablet
+//
+@include media($small_desktop) {
+
+  /* body:after {
+    content: 'small_desktop';
+    display:none;
+  } */
+
+  .w960, .wrap, .wrapper,
+  .cols-33-66, .cols-66-33 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer_contents {
+    background-position: 16px 28px;
+  }
+}
